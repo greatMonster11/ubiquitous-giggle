@@ -130,7 +130,7 @@ add_event(Name, Description, TimeOut) ->
     end.
 
 %% For the alternate crashing function
-add_event2(Name, Desciption, TimeOut) ->
+add_event2(Name, Description, TimeOut) ->
     Ref = make_ref(),
     ?MODULE ! {self(), Ref, {add, Name, Description, TimeOut}},
     receive
