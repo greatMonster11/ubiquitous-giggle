@@ -2,5 +2,5 @@
 
 ### How to run
 ```
-    erl -pa ebin/
+erl -pa ebin/
 ```
